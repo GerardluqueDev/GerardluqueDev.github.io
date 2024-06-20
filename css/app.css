@@ -285,12 +285,12 @@ body {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
+    justify-content: center; 
     
 }
 
-.video-container video {
-    max-width: 100%; /* Ajusta el ancho máximo del video */
+.video-container iframe {
+    max-width: 100%; 
     border-radius: 1em;
 }
 
@@ -399,6 +399,16 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    body {
+        cursor: auto;
+    }
+    a {
+        cursor: auto;
+    }
+    #cursor {
+        display: none;
+    }
+
     .header {
         padding: 0.5em 1em;
     }
@@ -422,47 +432,47 @@ body {
     }
 
     .seccion .h2 {
-        font-size: 2.5em; /* Reducción del tamaño del h2 */
+        font-size: 2.5em; 
     }
 
     .seccion .grid {
-        width: 90%; /* Reducción proporcional del ancho del grid */
-        grid-template-columns: 1fr; /* Cambia la disposición del grid a una columna */
-        gap: 1rem; /* Ajuste del gap */
+        width: 90%; 
+        grid-template-columns: 1fr; 
+        gap: 1rem; 
     }
 
     .seccion .article {
-        min-height: 15vh; /* Reducción proporcional de la altura mínima de los artículos */
+        min-height: 15vh; 
     }
 
     .infoapp p {
-        padding-bottom: 1rem; /* Ajuste del padding */
+        padding-bottom: 1rem; 
     }
 
     .video-container {
-        position: static; /* Cambio de posición para evitar superposición */
-        display: block; /* Ajuste para asegurarse de que el video se muestra correctamente */
-        margin-top: 1rem; /* Espacio entre el párrafo y el video */
+        position: static; 
+        display: block; 
+        margin-top: 1rem; 
     }
 
     .video-container video {
-        width: 100%; /* Ajuste del ancho máximo del video */
+        width: 100%; 
     }
 }
 @media screen and (max-width: 780px) {
     .infoapp p {
         font-size: 0.9em;
-        padding-bottom: .5rem; /* Reducción del espacio entre párrafos */
+        padding-bottom: .5rem; 
     }
 
     .video-container {
-        position: relative; /* Cambia la posición a relativa */
-        display: block; /* Ajusta el display */
-        margin-top: .5rem; /* Espacio entre el párrafo y el video */
+        position: relative; 
+        display: block; 
+        margin-top: .5rem; 
     }
 
     .video-container video {
-        width: 100%; /* Ajusta el ancho del video */
-        max-width: 100%; /* Ajusta el ancho máximo del video */
+        width: 100%; 
+        max-width: 100%; 
     }
 }

@@ -386,6 +386,16 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    body {
+        cursor: auto;
+    }
+    a {
+        cursor: auto;
+    }
+    #cursor {
+        display: none;
+    }
+
     .header {
         padding: 0.5em 1em;
     }
