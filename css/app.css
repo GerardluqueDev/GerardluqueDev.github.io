@@ -231,6 +231,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    border-bottom: 1px solid var(--blanco);
+    padding-bottom: 2em;
 }
 
 .seccion .article {
@@ -394,4 +396,73 @@ body {
 
 #cursor.mini {
     transform: scale(0.7);
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 0.5em 1em;
+    }
+
+    .header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0.5em 0;
+    }
+
+    .header ul li a {
+        display: block;
+        padding: 0.5em 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .seccion .h2 {
+        font-size: 2.5em; /* Reducción del tamaño del h2 */
+    }
+
+    .seccion .grid {
+        width: 90%; /* Reducción proporcional del ancho del grid */
+        grid-template-columns: 1fr; /* Cambia la disposición del grid a una columna */
+        gap: 1rem; /* Ajuste del gap */
+    }
+
+    .seccion .article {
+        min-height: 15vh; /* Reducción proporcional de la altura mínima de los artículos */
+    }
+
+    .infoapp p {
+        padding-bottom: 1rem; /* Ajuste del padding */
+    }
+
+    .video-container {
+        position: static; /* Cambio de posición para evitar superposición */
+        display: block; /* Ajuste para asegurarse de que el video se muestra correctamente */
+        margin-top: 1rem; /* Espacio entre el párrafo y el video */
+    }
+
+    .video-container video {
+        width: 100%; /* Ajuste del ancho máximo del video */
+    }
+}
+@media screen and (max-width: 780px) {
+    .infoapp p {
+        font-size: 0.9em;
+        padding-bottom: .5rem; /* Reducción del espacio entre párrafos */
+    }
+
+    .video-container {
+        position: relative; /* Cambia la posición a relativa */
+        display: block; /* Ajusta el display */
+        margin-top: .5rem; /* Espacio entre el párrafo y el video */
+    }
+
+    .video-container video {
+        width: 100%; /* Ajusta el ancho del video */
+        max-width: 100%; /* Ajusta el ancho máximo del video */
+    }
 }

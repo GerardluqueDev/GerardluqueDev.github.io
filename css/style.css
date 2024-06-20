@@ -63,6 +63,7 @@ select {
     color: inherit;
 }
 
+
 body {
     font-family: var(--tipografia-principal);
     font-size: 100%;
@@ -382,4 +383,80 @@ body {
 
 #cursor.mini {
     transform: scale(0.7);
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 0.5em 1em;
+    }
+
+    .header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0.5em 0;
+    }
+
+    .header ul li a {
+        display: block;
+        padding: 0.5em 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .seccion {
+        padding: 1em;
+    }
+
+    .seccion .h2 {
+        font-size: 3em;
+    }
+
+    .seccion .h3 {
+        font-size: 2em;
+    }
+
+    .seccion .grid {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 1rem;
+    }
+
+    .seccion .ul .a {
+        padding: 0.5em;
+    }
+
+    .seccion .article {
+        margin-bottom: 1em;
+    }
+
+    .seccion .h4 {
+        font-size: 1.2em;
+    }
+
+    .works .h2 {
+        font-size: 2em;
+    }
+
+    .about .h2 {
+        font-size: 2.5em;
+    }
+
+    .about p {
+        font-size: 1em;
+        max-width: unset;
+    }
+
+    .works .rrss {
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem 0;
+    }
+
+    .works .li {
+        margin: 0.5em 0;
+    }
 }
